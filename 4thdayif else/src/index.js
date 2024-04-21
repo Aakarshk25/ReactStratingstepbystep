@@ -24,6 +24,7 @@ const currentTime = date.getHours();
 const customStyle = {
   color: "",
 };
+// we have to conacante to use cuatomstyle for css in if else like we do here 
 let greeting;
 if (currentTime < 12) {
   greeting = "good morning";
