@@ -27,12 +27,16 @@ const customStyle = {
 let greeting;
 if (currentTime < 12) {
   greeting = "good morning";
+  customStyle.color = "red";
 } else if (currentTime < 18) {
   greeting = "good Afternoon";
+  customStyle.color = "green";
+
 } else {
   greeting = "good night";
-}
+  customStyle.color = "blue";
 
+}
 ReactDOM.render(
   <h1 className="heading" style={customStyle}>
     {greeting}
